@@ -1,0 +1,31 @@
+.table {
+    margin: auto;
+    width: 50% !important; 
+ }
+
+pre, code {
+    white-space: pre-line;
+}
+
+pre > code > i {
+    white-space: pre;
+}
+
+.copyable-code {
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color */
+    padding: 15px; /* Add padding for better readability */
+    border-radius: 25px; /* Rounded corners */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+  
+  /* Style the copy button */
+  .copy-button {
+    background-color: grey; /* Blue color for the button */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 25px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

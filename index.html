@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body class=" text-bg-dark text-center">
+  <div class="container-fluid m-2" id="accordion" >
+    
+    <!--Fundamentals table-->
+    <div class="row justify-content-center">
+      <div class="col-auto">
+      <p class="display-2 ">Javascript Tutorial</p>
+
+    <table class="table table-sm table-bordered" >
+      <p class="display-6">Javascript Fundamentals and Variables</p>
+
+    <thead>
+        <tr>
+            <th>Name of the Element or tag</th>
+            <th>Explanation</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          <td>            
+            <a href="#script" data-bs-toggle="collapse" data-bs-parent="#accordion" role="button" >Script</a>
+            <div id="script" class="collapse" data-bs-parent="#accordion">
+              <b>Syntax:</b>
+             <pre class="copyable-code">
+              <code>
+                script             
+              </code>
+              <button class="copy-button">Copy</button>
+          </pre>
+            </div>
+          </td>
+            <td> An external JavaScript file can also be written separately and included within our HTML file.</td>
+        </tr>
+        <tr>
+          <td>
+          <a href="#let" data-bs-toggle="collapse" role="button">let</a>
+          <div id="let" class="collapse" data-bs-parent="#accordion">
+            <b>Syntax:</b>
+            <pre class="copyable-code"> <code>
+
+              function exampleFunction() {
+                let x = 10;
+                if (true) {
+                  let y = 20;
+                }
+                console.log(x); // 10
+                console.log(y); // ReferenceError: y is not defined
+              }
+            </code>
+            <button class="copy-button">Copy</button>
+          </pre>
+                
+              </div>
+            </td>
+          <td>Variables declared with let are block-scoped, which means they are only accessible within the block (inside {}) in which they are declared, including loops, conditionals, and functions.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#var" data-bs-toggle="collapse" role="button">var</a>
+            <div id="var" class="collapse"
+            data-bs-parent="#accordion">
+              <b>Syntax:</b>
+<pre  class="copyable-code"><code>
+
+  function exampleFunction() {
+    var x = 10;
+    if (true) {
+      var y = 20;
+    }
+    console.log(x); // 10
+    console.log(y); // 20
+  }
+  
+</code>
+<button class="copy-button">Copy</button>
+</pre>
+</div>
+  </td>
+          <td>Variables declared with var are function-scoped, which means they are only accessible within the function in which they are declared.</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#comments" data-bs-toggle="collapse">Comments</a>
+            <div id="comments" class="collapse" data-bs-parent="#accordion">
+              <pre class="copyable-code">
+                <p>Single Line Comments</p> 
+                <code>
+                name = "Jack";
+                // printing name on the console
+                console.log("Hello " + name);
+              </code>
+              <button class="copy-button">Copy</button>
+              </pre>
+              <pre class="copyable-code">
+                <code>
+                  <p>Multi-Line Comments</p>
+                  /* 
+                  The following program contains the source code for a game called Baghchal.
+                  Baghchal is a popular board game in Nepal where two players choose either sheep or tiger. It is played on a 5x5 grid.
+                  */
+                </code>
+              
+              <button class="copy-button">Copy</button>
+            </pre>
+              
+            </div>
+          </td>
+          <td>We use <q>// </q> (forward slashes) for the single line Comments
+          <br>
+        <q>  /*---------*/  </q> for Multi-Line Comments</td>
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>
+</div>
+<!--end of Fundamentals table-->
+
+<!--Datatypes-->
+<div class="container-fluid m-2" >
+  <div class="row justify-content-center">  
+        
+      <table class="table table-xxl table-bordered" >
+        <p class="display-6">Javascript Datatypes</p>
+        
+        <thead>
+          <tr>
+            <th>Name of the Element or tag</th>
+            <th>Explanation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="2">There are two types of Primitive Data types and Non-Primitive Datatypes</td>
+        </tr>
+        <tr>  <td colspan="2">Primitive Data Types Types</td></tr>
+        <!--String datatype-->
+          <tr>
+            <td>            
+              <a href="#string" data-bs-toggle="collapse" role="button">String</a>
+              <div id="string" class="collapse" data-bs-parent="#accordion">
+          <b>Syntax:</b>
+          <pre  class="copyable-code"><code>
+
+            // Using double quotes:
+            let carName1 = "Volvo XC60";
+            
+            // Using single quotes:
+            let carName2 = 'Volvo XC60';
+          </code>
+          <button class="copy-button">Copy</button>
+        </pre>
+          </div>
+        </td>
+        <td>It represents a series of characters and is written with quotes. A string can be represented using a single or a double quote.</td>
+      </tr>
+      <!--Number datatype-->
+      <tr>
+        <td>
+          <a href="#number" data-bs-toggle="collapse" role="button">Number</a>
+          <div id="number" class="collapse" data-bs-parent="#accordion">
+            <b>example:</b>
+            <pre class="copyable-code"> 
+              <code>
+                var x = 3; //without decimal
+                var y = 3.6; //with decimal
+            </code>
+            <button class="copy-button">Copy</button>
+          </pre>
+          </div>
+        </td>
+        <td> It represents a number and can be written with or without decimals.</td>
+        <tr>
+          <td>
+<!------------BigInt datatype-------------->
+    <a href="#bigint" data-bs-toggle="collapse" role="button">Bigint</a>
+        <div id="bigint" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+     <code>var bigInteger =  234567890123456789012345678901234567890;</code>
+     <button class="copy-button">Copy</button>
+    </pre>
+  </div>
+</td>
+<td>This data type is used to store numbers which are above the limitation of the Number data type. It can store large integers and is represented by adding “n” to an integer literal.</td>
+</tr>
+<!--Boolean datatype-->
+<tr>
+  <td>
+<a href="#boolean" data-bs-toggle="collapse" role="button">Boolean</a>
+<div id="boolean" class="collapse" data-bs-parent="#accordion">
+  <b>Example:</b>
+  <pre  class="copyable-code">
+<code>Example :
+
+  var a = 2;
+  var b =  3;
+  var c =  2;
+  (a == b) // returns false
+  (a == c) //returns true</code>
+<button class="copy-button">Copy</button>
+</pre>
+</div>
+</td>
+<td>It represents a logical entity and can have only two values : true or false. Booleans are generally used for conditional testing.
+</td>
+</tr>
+<!--Undefined Datatype-->
+<tr>
+  <td>
+<a href="#undefined" data-bs-toggle="collapse" role="button">Undefined</a>
+<div id="undefined" class="collapse" data-bs-parent="#accordion">
+  <b>Example:</b>
+  <pre  class="copyable-code">
+<code>Example :
+
+  var x; // value of x is undefined
+  var y = undefined; // we can also set the value of a variable as undefined</code>
+<button class="copy-button">Copy</button>
+</pre>
+</div>
+</td>
+<td>When a variable is declared but not assigned, it has the value of undefined and it’s type is also undefined.</td>
+</tr>
+<!--Null Datatype-->
+<tr>
+  <td>
+<a href="#null" data-bs-toggle="collapse" role="button">Null</a>
+<div id="null" class="collapse" data-bs-parent="#accordion">
+  <b>Example:</b>
+  <pre  class="copyable-code">
+<code>Example:
+    var z = ; //null</code>
+<button class="copy-button">Copy</button>
+</pre>
+</div>
+</td>
+<td>It represents a non-existent or a invalid value</td>
+</tr>
+<!------------Symbol Datatype------------->
+<tr>
+  <td>
+<a href="#symbol" data-bs-toggle="collapse" role="button">Symbol</a>
+<div id="symbol" class="collapse" data-bs-parent="#accordion">
+  <b>Example:</b>
+  <pre  class="copyable-code">
+<code>Example:
+  var symbol1 = Symbol('symbol');
+</code>
+<button class="copy-button">Copy</button>
+</pre>
+</div>
+</td>
+<td>a new data type introduced in the ES6 version of javascript. It is used to store an anonymous and unique value.
+</td>
+</tr>
+<!------------Type of Primitive Datatypes------------->
+<tr>
+  <td>
+<a href="#typeof" data-bs-toggle="collapse" role="button">typeof</a>
+<div id="typeof" class="collapse" data-bs-parent="#accordion">
+  <b>Example:</b>
+  <pre  class="copyable-code">
+<code>Example:
+  typeof of primitive types :
+  typeof "John Doe" // Returns "string"
+  typeof 3.14 // Returns "number"
+  typeof true // Returns "boolean"
+  typeof 234567890123456789012345678901234567890n // Returns bigint
+  typeof undefined   // Returns "undefined"
+  typeof null   // Returns "object" (kind of a bug in JavaScript)
+  typeof Symbol('symbol') // Returns Symbol
+</code>
+<button class="copy-button">Copy</button>
+</pre>
+</div>
+</td>
+<td>To know the type of a JavaScript variable, we can use the typeof operator.
+</td>
+</tr>
+<!-----Non-Primitive Datatypes------>
+<tr>
+  <tr>  <td colspan="2">Non-Primitive Data Types</td></tr>
+</tr>
+<!--Object datatype-->
+<tr>
+  <td>            
+    <a href="#object" data-bs-toggle="collapse" role="button">Object</a>
+    <div id="object" class="collapse" data-bs-parent="#accordion">
+<b>Syntax:</b>
+<pre  class="copyable-code"><code>
+
+  // Collection of data in key-value pairs
+
+var obj1 = {
+   x:  43,
+   y:  "Hello world!",
+   z: function(){
+      return this.x;
+   }
+}
+      
+// Collection of data as an ordered list
+     
+var array1 = [5, "Hello", true, 4.1];
+</code>
+<button class="copy-button">Copy</button>
+</pre>
+</div>
+</td>
+<td>Primitive data types can store only a single value. <br>To store multiple and complex values, non-primitive data types are used.
+  <br> <b>Object</b>- Used to store collection of data.
+  <br> 
+  <b>Note :</b>It is important to remember that any data type that is not a primitive data type, is of Object type in javascript.
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<!----------------end of datatypes---------------->
+
+<!-------------Arthemetic Operators table-------------------> 
+<div class="container-fluid" >
+
+  <div class="row justify-content-center ">
+   
+      <table class="table table-sm table-bordered" >
+        <p class="display-6">Javascript Operators</p>
+        <thead>
+          <tr>
+      <th>Name </th>
+      <th>Description</th>
+    </tr>
+    <tr>  
+      <td colspan="2">Arithmetic Operators <br>
+        <b>Arithmetic Operators</b> are used to perform arithmetic operations on numbers:</td>
+    </tr>
+
+    
+  </thead>
+<tbody>
+  <!---------ADDITION--------------->
+    <tr>
+      <td>
+        <a href="#plus" data-bs-toggle="collapse" role="button"><q>   +   </q></a>
+        <div id="plus" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              var a=10;
+              var b=20;
+              var c=a+b;
+              console.log(c);
+              // output 10+20 = 30
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>addition</td>
+    </tr>
+    <!---------Subtraction--------------->
+    <tr>
+      <td>
+        <a href="#minus" data-bs-toggle="collapse" role="button"><q>   -   </q></a>
+        <div id="minus" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              var a=10;
+              var b=20;
+              var c=a-b;
+              console.log(c);
+              // output 10-20 = 10
+            </code>
+            <button class="copy-button">Copy</button>
+          </pre>
+        </div>
+      </td>
+      <td>Subtraction</td>
+    </tr>
+    <!---------Multiplication--------------->
+    <tr>
+      <td>
+        <a href="#multiply" data-bs-toggle="collapse" role="button"><q>   *   </q></a>
+        <div id="multiply" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              var a=10;
+              var b=20;
+              var c=a*b;
+              console.log(c);
+              // output 10*20 = 200
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Multiplication</td>
+    </tr>
+    <!---------Difvivison--------------->
+    <tr>
+      <td>
+        <a href="#division" data-bs-toggle="collapse" role="button"><q>   /  </q></a>
+        <div id="division" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              var a=20;
+              var b=10;
+              var c=a/b;
+              console.log(c);
+              // output 20/10 = 2
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Division</td>
+    </tr>
+    <!------------Modulus--------------->
+    <tr>
+      <td>
+        <a href="#modulus" data-bs-toggle="collapse" role="button"><q>   %   </q></a>
+        <div id="modulus" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              var a=20;
+              var b=10;
+              var c=a*b;
+              console.log(c);
+              // output 20%10 = 0
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Modulus (Remainder)</td>
+    </tr>
+    <!---------Increment--------------->
+    <tr>
+      <td>
+        <a href="#increment" data-bs-toggle="collapse" role="button"><q>   ++   </q></a>
+        <div id="increment" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              var a=10;
+              console.log(a++);
+              //Output = 11
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Increment</td>
+    </tr>
+    <!---------Decrement--------------->
+    <tr>
+      <td>
+        <a href="#decrement" data-bs-toggle="collapse" role="button"><q>   --  </q></a>
+        <div id="decrement" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              var a=10;
+              a--;
+              // Output a = 9
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Decrement</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<!------End of Arthemetic Table------>
+
+<!----------Assignment Operators table----------->  
+<div class="container-fluid" >
+
+  <div class="row justify-content-center ">  
+      <p class="display-6">Javascript Assignment Operators</p>
+<table class="table table-sm table-bordered" >
+  <thead>
+    <tr>
+<th>Name </th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+  <!---------Assign--------------->
+<tr>
+<td>
+  <a href="#assign" data-bs-toggle="collapse" role="button"><q>   =   </q></a>
+  <div id="assign" class="collapse" data-bs-parent="#accordion">
+    <b>Example:</b>
+    <pre  class="copyable-code">
+      <code>
+        var a=10;
+        var b=20;
+        var c=a+b;
+        console.log(c);
+        // output 10+20 = 30
+      </code>
+      <button class="copy-button">Copy</button>
+      </pre>
+  </div>
+</td>
+<td>Assign</td>
+</tr>
+  <!---------Add and assign--------------->
+<tr>
+<td>
+  <a href="#addandassign" data-bs-toggle="collapse" role="button"><q>  +=   </q></a>
+  <div id="addandassign" class="collapse" data-bs-parent="#accordion">
+    <b>Example:</b>
+    <pre  class="copyable-code">
+      <code>
+        var a=10; 
+        a +=20; 
+        // a = 30
+      </code>
+      <button class="copy-button">Copy</button>
+    </pre>
+  </div>
+</td>
+<td>Add and assign</td>
+</tr>
+ <!---------Subtract and assign--------------->
+<tr>
+<td>
+  <a href="#subandassign" data-bs-toggle="collapse" role="button"><q>   -=   </q></a>
+  <div id="subandassign" class="collapse" data-bs-parent="#accordion">
+    <b>Example:</b>
+    <pre  class="copyable-code">
+      <code>
+        var a=20;
+         a-=10; 
+         Now a = 10
+      </code>
+      <button class="copy-button">Copy</button>
+      </pre>
+  </div>
+</td>
+<td>Subtract and assign</td>
+</tr>
+ <!---------Multiply and assign--------------->
+<tr>
+<td>
+  <a href="#mulandassign" data-bs-toggle="collapse" role="button"><q>   *= </q></a>
+  <div id="mulandassign" class="collapse" data-bs-parent="#accordion">
+    <b>Example:</b>
+    <pre  class="copyable-code">
+      <code>
+        var a=10; 
+        a*=20; 
+        // a = 200
+      </code>
+      <button class="copy-button">Copy</button>
+      </pre>
+  </div>
+</td>
+<td>Multiply and assign</td>
+</tr>
+ <!---------Divide and assign--------------->
+<tr>
+<td>
+  <a href="#divandassign" data-bs-toggle="collapse" role="button"><q>   /=   </q></a>
+  <div id="divandassign" class="collapse" data-bs-parent="#accordion">
+    <b>Example:</b>
+    <pre  class="copyable-code">
+      <code>
+        var a=10; 
+        a/=2; 
+        // a = 5
+      </code>
+      <button class="copy-button">Copy</button>
+      </pre>
+  </div>
+</td>
+<td>Divide and assign</td>
+</tr>
+ <!---------Modulus and assign--------------->
+<tr>
+<td>
+  <a href="#modassign" data-bs-toggle="collapse" role="button"><q>   %=   </q></a>
+  <div id="modassign" class="collapse" data-bs-parent="#accordion">
+    <b>Example:</b>
+    <pre  class="copyable-code">
+      <code>
+        var a=10; 
+        a%=2; 
+        // a = 0
+      </code>
+      <button class="copy-button">Copy</button>
+      </pre>
+  </div>
+</td>
+<td>Modulus and assign</td>
+</tr> 
+</tbody>
+</table>
+</div>
+</div>
+<!---------End of Assignment Operators Table--------------->
+
+ 
+<!---------STARTING JavaScript Comparison Operators---------->
+
+
+ 
+<div class="container-fluid" >
+
+  <div class="row justify-content-center ">
+   
+      <table class="table table-sm table-bordered" >
+        <p class="display-6">Javascript Comparison Operators</p>
+        <thead>
+          <tr>
+      <th>Name </th>
+      <th>Description</th>
+    </tr>
+
+    
+  </thead>
+<tbody>
+  <!---------Is equal to--------------->
+    <tr>
+      <td>
+        <a href="#equalto" data-bs-toggle="collapse" role="button"><q>   ==   </q></a>
+        <div id="equalto" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              10==20
+              // false
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>	Is equal to </td>
+    </tr>
+    <!---------Identical--------------->
+    <tr>
+      <td>
+        <a href="#identical" data-bs-toggle="collapse" role="button"><q>   ===   </q></a>
+        <div id="identical" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              10===20 
+              // false
+            </code>
+            <button class="copy-button">Copy</button>
+          </pre>
+        </div>
+      </td>
+      <td>Identical (equal and of same type)</td>
+    </tr>
+    <!---------Not equal to--------------->
+    <tr>
+      <td>
+        <a href="#notequal" data-bs-toggle="collapse" role="button"><q>   !=   </q></a>
+        <div id="notequal" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              10!=20 
+              // true
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Not equal to</td>
+    </tr>
+    <!---------Not Identical--------------->
+    <tr>
+      <td>
+        <a href="#notidentical" data-bs-toggle="collapse" role="button"><q>   !==   </q></a>
+        <div id="notidentical" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              20!==20 
+              // false
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Not Identical</td>
+    </tr>
+    <!------------Greater than--------------->
+    <tr>
+      <td>
+        <a href="#greaterthan" data-bs-toggle="collapse" role="button"><q>   >   </q></a>
+        <div id="greaterthan" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              20>10 
+              // true
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Greater than</td>
+    </tr>
+    <!---------Greater than or equal to--------------->
+    <tr>
+      <td>
+        <a href="#greaterequal" data-bs-toggle="collapse" role="button"><q>   >=   </q></a>
+        <div id="greaterequal" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              20>=10 
+              // true
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Greater than or equal to</td>
+    </tr>
+    <!---------Less than--------------->
+    <tr>
+      <td>
+        <a href="#lessthan" data-bs-toggle="collapse" role="button"><q>     <  </q></a>
+        <div id="lessthan" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              20<10 
+              // false
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Less than</td>
+    </tr>
+    <!---------Less than or equal to--------------->
+    <tr>
+      <td>
+        <a href="#lessthanequal" data-bs-toggle="collapse" role="button"><q>     < </q></a>
+        <div id="lessthanequal" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              20<=10 
+              // false
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Less than</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<!------------End of the Comparision operators---------------------->
+
+
+<!---------STARTING JavaScript Bitwise Operators---------->
+
+
+ 
+<div class="container-fluid" >
+
+  <div class="row justify-content-center ">
+   
+      <table class="table table-sm table-bordered" >
+        <p class="display-6">Javascript Bitwise Operators</p>
+        <thead>
+          <tr>
+      <th>Name </th>
+      <th>Description</th>
+    </tr>
+
+    
+  </thead>
+<tbody>
+  <!---------Bitwise AND--------------->
+    <tr>
+      <td>
+        <a href="#bitwiseand" data-bs-toggle="collapse" role="button"><q>   &   </q></a>
+        <div id="bitwiseand" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              (10==20 & 20==33) = false
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>	Bitwise AND</td>
+    </tr>
+    <!---------Bitwise OR--------------->
+    <tr>
+      <td>
+        <a href="#bitwiseor" data-bs-toggle="collapse" role="button"><q>   |  </q></a>
+        <div id="bitwiseor" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              (10==20 | 20==33) = false
+            </code>
+            <button class="copy-button">Copy</button>
+          </pre>
+        </div>
+      </td>
+      <td>Bitwise OR</td>
+    </tr>
+    <!---------Bitwise XOR	--------------->
+    <tr>
+      <td>
+        <a href="#bitwisexor" data-bs-toggle="collapse" role="button"><q>   ^  </q></a>
+        <div id="bitwisexor" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              (10==20 ^ 20==33) = false
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Bitwise XOR	</td>
+    </tr>
+    <!---------Bitwise NOT--------------->
+    <tr>
+      <td>
+        <a href="#bitwisenot" data-bs-toggle="collapse" role="button"><q>  ~   </q></a>
+        <div id="bitwisenot" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              (~10) = -10
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Bitwise NOT</td>
+    </tr>
+    <!------------Bitwise Left Shift--------------->
+    <tr>
+      <td>
+        <a href="#bitwiseleft" data-bs-toggle="collapse" role="button"><q>   <<   </q></a>
+        <div id="bitwiseleft" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              (10<<2) = 40
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Bitwise Left Shift</td>
+    </tr>
+    <!---------Bitwise Right Shift--------------->
+    <tr>
+      <td>
+        <a href="#bitwiseright" data-bs-toggle="collapse" role="button"><q>   >>   </q></a>
+        <div id="bitwiseright" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              (10>>2) = 2
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Bitwise Right Shift</td>
+    </tr>
+    <!---------Bitwise Right Shift with Zero--------------->
+    <tr>
+      <td>
+        <a href="#bitwiserightzero" data-bs-toggle="collapse" role="button"><q>     >>>  </q></a>
+        <div id="bitwiserightzero" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              (10>>>2) = 2
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Bitwise Right Shift with Zero</td>
+    </tr>
+    <!---------Less than or equal to--------------->
+    
+  </tbody>
+</table>
+</div>
+</div>
+<!------------End of the Bitwise operators---------------------->
+
+<!-----------Logical Operators------------->
+
+<div class="container-fluid" >
+
+  <div class="row justify-content-center ">
+   
+      <table class="table table-sm table-bordered" >
+        <p class="display-6">Javascript Logical Operators</p>
+        <thead>
+          <tr>
+      <th>Name </th>
+      <th>Description</th>
+    </tr>
+
+    
+  </thead>
+<tbody>
+  <!---------	Logical AND--------------->
+    <tr>
+      <td>
+        <a href="#logicaland" data-bs-toggle="collapse" role="button"><q>   &&   </q></a>
+        <div id="logicaland" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              (10==20 && 20==33) 
+              // false
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>	Logical AND	</td>
+    </tr>
+    <!---------Logical OR--------------->
+    <tr>
+      <td>
+        <a href="#logicalor" data-bs-toggle="collapse" role="button"><q>   ||  </q></a>
+        <div id="logicalor" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              (10==20 || 20==33) = false
+            </code>
+            <button class="copy-button">Copy</button>
+          </pre>
+        </div>
+      </td>
+      <td>Logical OR</td>
+    </tr>
+    <!---------Logical Not	--------------->
+    <tr>
+      <td>
+        <a href="#logicalnot" data-bs-toggle="collapse" role="button"><q>   !=   </q></a>
+        <div id="logicalnot" class="collapse" data-bs-parent="#accordion">
+          <b>Example:</b>
+          <pre  class="copyable-code">
+            <code>
+              10!=20 
+              // true
+            </code>
+            <button class="copy-button">Copy</button>
+            </pre>
+        </div>
+      </td>
+      <td>Logical Not	</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+</div>
+<!------------End of the Logical operators---------------------->
+
+
+<!---------STARTING JavaScript Special Operators---------->
+
+
+ 
+<div class="container-fluid" >
+
+  <div class="row justify-content-center ">
+   
+      <table class="table table-sm table-bordered" >
+        <p class="display-6">Javascript Special Operators</p>
+        <thead>
+          <tr>
+      <th>Name </th>
+      <th>Description</th>
+    </tr>
+
+    
+  </thead>
+<tbody>
+  <!---------Conditional Operator--------------->
+    <tr>
+      <td>
+        <q>   (?:)</q>
+      </td>
+      <td>	Conditional Operator <br>
+        Conditional Operator returns value based on the condition. It is like if-else.</td>
+    </tr>
+    <!---------Comma--------------->
+    <tr>
+      <td> <q>   ,  </q>
+      </td>
+      <td>Comma 
+        <br>Comma Operator allows multiple expressions to be evaluated as single statement.</td>
+    </tr>
+    <!---------Delete--------------->
+    <tr>
+      <td>
+        <q>   Delete </q>
+      </td>
+      <td>	Delete Operator deletes a property from the object.</td>
+    </tr>
+    <!---------in operator--------------->
+    <tr>
+      <td>
+        <q>   in </q>
+      </td>
+      <td>	In Operator checks if object has the given property</td>
+    </tr>
+    <!------------instanceof--------------->
+    <tr>
+      <td>
+        <q>   isntanceof </q>
+      </td>
+      <td>	checks if the object is an instance of given type</td>
+    </tr>
+    <!--------new operator--------------->
+    <tr>
+      <td>
+        <q>   new </q>
+      </td>
+      <td>	creates an instance (object)</td>
+    </tr> 
+    <!---------typeof--------------->
+    <tr>
+      <td>
+        <q>   typeof </q>
+      </td>
+      <td>	checks the type of object.</td>
+    </tr>
+    
+    <!---------void--------------->
+    <tr>
+      <td>
+        <q>   void </q>
+      </td>
+      <td>	it discards the expression's return value.</td>
+    </tr>
+    <!---------yield opertor-------->
+    <tr>
+      <td>
+        <q>   yield </q>
+      </td>
+      <td>	checks what is returned in a generator by the generator's iterator..</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<!------------End of the Special operators---------------------->
+
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
